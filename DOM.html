@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=DOM!, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello, DOM!</h1>
+</body>
+<script>
+    // console.log("hello console");
+    var h1El =  document.querySelector('h1') 
+    var name = prompt("who are you?") ;
+    if (name) {
+        var agree = confirm(name  +  " are you sure to join with us?");
+        if (agree){
+            alert("okay, come on, lets go");
+            h1El.innerHTML = "hello, "+name;
+            h1El.style.color ="salmon";
+        }
+
+        else {
+            alert("oh no...");
+        }
+        
+    }
+    else {
+        alert("we dont know you...");
+    }
+</script>
+</html>
